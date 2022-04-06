@@ -4,9 +4,27 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ElButon: typeof import('element-plus/es')['ElButon']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCascaderPanel: typeof import('element-plus/es')['ElCascaderPanel']
+    ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
+    ElCol: typeof import('element-plus/es')['ElCol']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElInput: typeof import('element-plus/es')['ElInput']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
+    ElRow: typeof import('element-plus/es')['ElRow']
+    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
+    Footer: typeof import('./src/components/todoList/Footer.vue')['default']
+    Header: typeof import('./src/components/todoList/Header.vue')['default']
     HomeComponents: typeof import('./src/components/HomeComponents.vue')['default']
+    Item: typeof import('./src/components/todoList/Item.vue')['default']
+    List: typeof import('./src/components/todoList/List.vue')['default']
+    Menu: typeof import('./src/components/menu.vue')['default']
+    Table: typeof import('./src/components/table.vue')['default']
   }
 }
 
